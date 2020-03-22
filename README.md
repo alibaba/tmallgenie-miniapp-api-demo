@@ -9,11 +9,7 @@
 想了解更多请参考 [天猫精灵语音小程序开放平台](https://www.aligenie.com/doc/365819/fcoa8t)
 
 ### 使用
-在项目根目录运行以下命令，安装依赖：
+通过支付宝小程序IDE，打开项目即可预览。具体流程请参考[语音小程序开发流程](https://www.aligenie.com/doc/365819/wiz0l2)
 
-````
-npm install
-
-````
 ### 运行效果
 ![](/image/genie-apidemo-index.png)
