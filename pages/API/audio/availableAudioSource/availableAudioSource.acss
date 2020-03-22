@@ -1,0 +1,15 @@
+.availableAudioSources {
+  display: flex;
+  width: 100vw;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.availableAudioSources-container {
+  display: flex;
+  flex-direction: column;
+  width: 824px;
+  background-color: rgba(36, 39, 45, 0.57);
+  border-radius: 8px;
+}

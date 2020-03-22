@@ -1,0 +1,5 @@
+<view class="page-content">
+  <view class="page-section-title">获取精灵账号信息</view>
+  <view class="page-section-sub-title">my.getGenieUserInfo</view>
+  <view class="operation-item" onTap="getGenieUserInfo">获取</view>
+</view>

@@ -1,0 +1,5 @@
+<view class="page-content">
+  <view class="page-section-title">全局音频</view>
+  <view class="page-section-sub-title">my.playAudio</view>
+  <view class="operation-item" onTap="playMusic">播放</view>
+</view>

@@ -1,0 +1,52 @@
+.page-body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 50%;
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+.info-area {
+  color: white;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  font-size: 22px;
+  display: inline-block;
+}
+
+.submit-area{
+  margin-top: 50rpx;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.section-body {
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.placeholder-body {
+	color: black;
+}
+
+.radio2-body {
+  color: white;
+	width: 50%;
+}
+
+/* 横着的分割View样式 */
+/*分割线样式*/
+.div-line {
+ background: grey;
+ width: 100%;
+ height: 1px;
+ margin-top: 20px;
+}
+
+

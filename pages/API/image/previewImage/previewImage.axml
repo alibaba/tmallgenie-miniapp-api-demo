@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="page-section-title">预览图片</view>
+  <view class="preview-image">
+    <view class="preview-image-container">
+      <view class="page-container-api-title">my.previewImage</view>
+      <button class="page-container-api-button" type="primary" onTap="previewImage" hover-class="defaultTap">预览图片</button>
+    </view>
+  </view>
+</view>

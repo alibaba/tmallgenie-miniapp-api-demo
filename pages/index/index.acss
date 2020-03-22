@@ -1,0 +1,107 @@
+.page {
+  display: flex;
+  width: 100vw;
+  height: 600px;
+}
+
+.index-tabs-tab-bar-wrapper {
+  width: 100vw;
+  padding-left: 200px;
+  padding-right: 64px;
+}
+
+.index-tabs-content {
+  display: flex;
+  width: 100vw;
+  height: 500px;
+  flex-direction: column;
+}
+
+.index-scroll-content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  height: 500px;
+}
+
+.index-scroll-content-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.index-scroll-content-banner-logo {
+  width: 73px;
+  height: 78rpx;
+}
+
+.index-scroll-content-banner-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.index-scroll-content-banner-sub-title {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 18px;
+}
+
+.index-scroll-content-cell {
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 8px;
+}
+
+.index-scroll-content-cell-section {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.index-scroll-content-cell-navigator {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  background-color: rgba(36, 39, 45, 0.57)
+}
+
+.index-scroll-content-cell-navigator-thumb{
+  height: 40px;
+  width: 40px;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.index-scroll-content-cell-navigator-name {
+  color: white;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.index-scroll-content-cell-navigator-brief {
+  color: #CCC;
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+.index-scroll-content-cell-navigator-arrow {
+  width: 13px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: 36px;
+}
+
+.index-scroll-content-cell-navigator-line {
+  height: 1px;
+  background-color: #010610;
+}
+.index-scroll-content-bottom-inset{
+  margin-top: 30px;
+}

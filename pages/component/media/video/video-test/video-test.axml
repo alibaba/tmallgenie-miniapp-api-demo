@@ -1,0 +1,48 @@
+<view class="page-body">
+
+  <view class="container">
+     <video id="myVideo" 
+      src="{{video.src}}" 
+      controls="{{video.showAllControls}}"
+      loop="{{video.isLooping}}"
+      muted="{{video.muteWhenPlaying}}"
+      show-fullscreen-btn="{{video.showFullScreenButton}}"
+      show-play-btn="{{video.showPlayButton}}"
+      show-center-play-btn="{{video.showCenterButton}}"
+      object-fit="{{video.objectFit}}"
+      autoplay="{{video.autoPlay}}"
+      direction="{{video.directionWhenFullScreen}}"
+      initial-time="{{video.initTime}}"
+      mobilenetHintType="{{video.mobilenetHintType}}"
+      extraInfo="{{video.extraInfo}}"
+      onPlay="onPlay" 
+      onPause="onPause" 
+      onEnded="onEnded"
+      onError="onPlayError"
+      onTimeUpdate="onTimeUpdate"
+      enableNative="{{true}}"
+      class="video"/>
+
+    <view>
+        <view class="section-body">播放状态展示</view> 
+        <button type="default" class="info-area" plain="false"> {{status}} </button> 
+        <button type="default" class="info-area" plain="false"> {{time}} </button> 
+
+        <view class="section-body">接口展示</view>
+        <button type="default" class="btn-area" onTap="play" plain> Play </button>
+        <button type="default" class="btn-area" onTap="pause" plain> Pause </button>
+        <button type="default" class="btn-area" onTap="stop" plain> Stop </button>
+        <button type="default" class="btn-area" onTap="mute" plain> Mute </button>
+        <button type="default" class="btn-area-3" onTap="fullScreen1" plain>竖屏全屏</button>
+        <button type="default" class="btn-area-3" onTap="fullScreen2" plain>横屏全屏</button>
+        <button type="default" class="btn-area-3" onTap="fullScreen0" plain>反向横屏</button>
+
+        <view class="section-body">播放速度调整</view>
+        <slider min="0.5" max="2.0" step="0.01" value="1.0" onChange="sliderChange" show-value="true"/>
+        <text style="float: left; color:white;">0.5x</text>
+        <text style="float: right; color:white;">2.0x</text>
+    </view>
+    
+  </view>
+
+</view>

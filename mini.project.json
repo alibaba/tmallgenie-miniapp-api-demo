@@ -1,0 +1,6 @@
+{
+  "includes": [
+    "app.json",
+    "skill.json"
+  ]
+}

@@ -1,0 +1,5 @@
+<view class="page-content">
+  <view class="page-section-title">获取地址信息</view>
+  <view class="page-section-sub-title">my.getLocation</view>
+  <view class="operation-item" onTap="getLocation">获取</view>
+</view>

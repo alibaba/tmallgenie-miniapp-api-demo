@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="page-section-title">获取图片信息 API</view>
+  <view class="get-image">
+    <view class="get-image-container">
+      <view class="page-container-api-title">my.getImageInfo</view>
+        <image class="get-image-image" src="{{src}}" onError="imageError" onLoad="imageLoad" mode="aspectFit"/>
+        <button class="page-container-api-button" type="primary" onTap="getImageInfo">获取图片信息</button>
+    </view>
+  </view>
+</view>
+
+

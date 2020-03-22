@@ -1,0 +1,17 @@
+<view>
+  <scroll-view class="container" scroll-y="{{true}}"> 
+    <view class="header"> 
+      <view class="title">欢迎来点餐</view>
+    </view> 
+    <view class="dish-item" a:for="{{dishes}}">
+      <view class="dish-desc">
+        <image class="icon" src="{{item.image}}"/>
+        <view class="dish-name">{{item.name}}</view>
+      </view>
+      <view class="dish-cost">
+        <view>x {{item.amount}}</view>
+        <view>{{item.totalCost}}元</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,48 @@
+
+.page-body {
+  display: flex;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.video {
+  margin-top: 120px;
+  width: 400px;
+  height: 200px;
+}
+
+.btn-area{
+  margin-top: 10rpx;
+  margin-bottom: 5rpx;
+  width: 25%;
+  display: inline-block;
+}
+
+.btn-area-3{
+  margin-top: 10rpx;
+  margin-bottom: 5rpx;
+  width: 33.33%;
+  display: inline-block;
+}
+
+.info-area {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  width: 50%;
+  display: inline-block;
+}
+
+.section-body {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20rpx;
+  font-size: 22px;
+}
+

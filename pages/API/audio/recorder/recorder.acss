@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+}
+
+.btn-area{
+  margin-top: 60rpx;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+}
+
+.row {
+  height: 50px;
+  background-color: rgba(36, 39, 45, 0.57);
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  padding: 20px 20px;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: space-between
+}
+
+.row-title {
+  color: white;
+  font-size: 20px;
+}
+
+.row-extra {
+  color: white;
+  font-size: 20px;
+  text-align: end;
+}
+
+.video-contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px
+}

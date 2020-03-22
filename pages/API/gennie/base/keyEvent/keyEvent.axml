@@ -1,0 +1,6 @@
+<view class="page-content">
+  <view class="page-section-title">模拟物理按键</view>
+  <view class="page-section-sub-title">sendKeyEvent</view>
+  <view class="operation-item" onTap="sendBackKeyEvent">BACK键</view>
+  <view class="operation-item" onTap="sendHomeKeyEvent">HOME键</view>
+</view>

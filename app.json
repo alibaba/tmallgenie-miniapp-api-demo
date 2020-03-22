@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/API/audio/recorder/recorder",
+    "pages/API/audio/innerAudio/innerAudio",
+    "pages/API/audio/backgroundAudio/backgroundAudio",
+    "pages/API/audio/availableAudioSource/availableAudioSource",
+    "pages/API/image/compressImage/compressImage",
+    "pages/API/image/getImageInfo/getImageInfo",
+    "pages/API/image/previewImage/previewImage",
+    "pages/API/image/saveImage/saveImage",
+    "pages/API/image/chooseImage/chooseImage",
+    "pages/API/phoneNumber/phoneNumber",
+    "pages/API/video/chooseVideo/chooseVideo",
+    "pages/API/video/saveVideo/saveVideo",
+    "pages/API/gennie/base/playTTS/playTTS",
+    "pages/API/gennie/base/navigationBar/navigationBar",
+    "pages/API/gennie/base/keyEvent/keyEvent",
+    "pages/API/gennie/voiceSkill/asr/asr",
+    "pages/API/gennie/voiceSkill/customSkill/customSkill",
+    "pages/API/gennie/voiceSkill/immersionChat/immersionChat",
+    "pages/API/gennie/voiceSkill/seeToSay/seeToSay",
+    "pages/API/gennie/money/pay/pay",
+    "pages/API/gennie/money/advertise/advertise",
+    "pages/component/media/live/live-setting/live-setting",
+    "pages/component/media/live/live-test/live-test",
+    "pages/component/media/live/live-player-test/live-player-test",
+    "pages/component/media/video/video-setting/video-setting",
+    "pages/component/media/video/video-test/video-test",
+    "pages/component/media/image/image",
+    "pages/component/open/webView/webView",
+    "pages/API/gennie/base/location/location",
+    "pages/API/audio/globalAudio/globalAudio",
+    "pages/API/gennie/base/userInfo/userInfo",
+    "pages/API/gennie/base/request/request"
+  ],
+  "window": {
+    "defaultTitle": "天猫精灵小程序官方示例",
+    "allowsBounceVertical": "NO"
+  }
+}

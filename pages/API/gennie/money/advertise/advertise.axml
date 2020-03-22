@@ -1,0 +1,11 @@
+<view class="page-content">
+  <view class="page-section-title">广告</view>
+  <view class="page-section-sub-title">my.showAdvertise</view>
+  <view class="operation-item" onTap="showVideoAd">视频广告</view>
+  <view class="operation-item" onTap="showBannerAd3">banner3图广告</view>
+  <view class="operation-item" onTap="showBannerAdBig">打开banner大图广告</view>
+  <view class="operation-item" onTap="showBannerAdSmall">打开banner小图广告</view>
+  <view class="operation-item" onTap="closeVideoAd">延迟10s关闭视频广告</view>
+  <view class="operation-item" onTap="closeBannerAd">关闭banner广告</view>
+  <view class="page-inset-bottom"/>
+</view>

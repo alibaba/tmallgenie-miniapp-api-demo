@@ -1,0 +1,47 @@
+<view class="page-body">
+	<view>
+		<live-player id="liveplayer"
+		 src="{{url}}"
+		 autoplay="{{true}}"
+		 class="live"
+		 onStateChange="onStateChange"
+		 onError="onError"
+		 onFullscreenChange="onFullscreenChange"
+		  />
+	</view>
+	
+	<view>
+		<view class="info-area">视频源(src):</view>
+		<input type="text" style="width:100%;" onInput="srcChanged" value="{{url}}" />	
+		<view class="section-body">播放状态展示:state/error/direction
+		</view>
+		<button type="default" class="info-area" plain="false"> {{state}} 
+		</button>
+		<button type="default" class="info-area" plain="false"> {{error}} 
+		</button>
+		<button type="default" class="info-area" plain="false"> {{direction}} 	
+		</button>
+
+		<view class="section-body">接口展示
+		</view>
+		<button type="default" class="btn-area-3" onTap="pause" plain>pause
+		</button>
+		<button type="default" class="btn-area-3" onTap="resume" plain>resume		
+		</button>
+		<button type="default" class="btn-area-3" onTap="mute" plain>mute		
+		</button>
+		<button type="default" class="btn-area-2" onTap="play" plain>play		
+		</button>
+		<button type="default" class="btn-area-2" onTap="stop" plain>stop
+		</button>
+		
+				
+		<button type="default" class="btn-area-3" onTap="fullScreen0" plain>反向横屏		
+		</button>
+		<button type="default" class="btn-area-3" onTap="fullScreen1" plain>竖屏全屏
+		</button>
+		<button type="default" class="btn-area-3" onTap="fullScreen2" plain>横屏全屏
+		</button>
+	</view>
+</view>
+			 		

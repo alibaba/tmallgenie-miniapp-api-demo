@@ -1,0 +1,15 @@
+{
+  "name": "tg_mini_api_demo",
+  "version": "1.0.0",
+  "description": "tmall genie api demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mini-genieui": "^3.0.2",
+    "umtrack-alipay": "^2.1.0"
+  }
+}

@@ -1,0 +1,11 @@
+<view class="inner-audio-page">
+    <view class="page-section-title">前景音频</view>
+    <view class="page-section-sub-title">my.createInnerAudioContext {{title}} </view>
+    <view class="operation-item" onTap="play">播放</view>
+    <view class="operation-item" onTap="pause">暂停</view>
+    <view class="operation-item" onTap="seek">seek{{seek}}s播放</view>
+    <view class="operation-item" onTap="stop">停止播放</view>
+    <view class="operation-item" onTap="destroy">destroy</view>
+    <view class="operation-item" onTap="getAllProps">显示属性</view>
+    <view class="page-inset-bottom "/>
+</view>

@@ -1,0 +1,95 @@
+.live {
+  width: 100%;
+  height: 500rpx;
+}
+
+.page-body {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.btn-area{
+  margin-top: 10rpx;
+  margin-bottom: 5rpx;
+  width: 100%;
+  display: inline-block;
+}
+.btn-area-2{
+  margin-top: 10rpx;
+  margin-bottom: 5rpx;
+  width: 50%;
+  display: inline-block;
+}
+
+.btn-area-3{
+  margin-top: 10rpx;
+  margin-bottom: 5rpx;
+  width: 33%;
+  display: inline-block;
+}
+
+.btn-area-4{
+  margin-top: 10rpx;
+  margin-bottom: 5rpx;
+  width:25%;
+  display: inline-block;
+}
+
+.info-area {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  width: 33%;
+  display: inline-block;
+}
+
+.section-body {
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.page-body {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  width: 100%;
+}
+
+.info-area {
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  display: inline-block;
+}
+
+.submit-area{
+  margin-top: 50rpx;
+  margin-bottom: 5rpx;
+  width: 100%;
+}
+
+.section-body {
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.placeholder-body {
+	color: black;
+}
+
+.radio3-body {
+	width: 30%;
+}
+
+.radio2-body {
+	width: 50%;
+}
+
+/* 横着的分割View样式 */
+/*分割线样式*/
+.div-line {
+ background: #E0E3DA;
+ width: 100%;
+ height: 2rpx;
+ margin-top: 40rpx;
+ margin-bottom: 20rpx;
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "g-tabs": "mini-genieui/lib/tabs/index",
+    "g-tabs-content": "mini-genieui/lib/tabs/tab-content/index"
+  }
+}

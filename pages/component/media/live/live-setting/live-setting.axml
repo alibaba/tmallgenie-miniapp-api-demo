@@ -1,0 +1,59 @@
+<view>
+	<view class="page-body">
+		<view class="info-area">推流地址(url):
+		</view>
+		<input type="text" style="width:100%;" onInput="urlChanged" value="{{livepush.url}}" />
+		<view class="div-line">
+		</view>
+		<view style="margin-bottom:20rpx;">功能性参数:
+		</view>
+		<text>自动推流(autopush):
+		</text>
+		<switch checked="{{livepush.autopush}}" style="margin-left:40rpx;" onChange="autoPush"/>
+		<view style="margin-top:20rpx;margin-bottom:20rpx;">
+		</view>
+		<text>是否静音(muted):
+		</text>
+		<switch checked="{{livepush.muted}}" style="margin-left:40rpx;" onChange="mutePush"/>
+		<view style="margin-top:20rpx;margin-bottom:20rpx;">
+		</view>
+		<view class="div-line">
+		</view>
+		<text>流清晰度(mode):
+		</text>
+		<radio-group class="radio-group" onChange="modeChange" style="margin-top:20rpx;">
+			<label class="radio3-body" a:for="{{mode_items}}">
+				<radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}  		
+			</label>
+		</radio-group>
+		<view style="margin-top:20rpx;margin-bottom:20rpx;">
+		</view>
+		<view class="div-line">
+		</view>
+		<text>推流方向(orientation):		
+		</text>
+		<radio-group class="radio-group" onChange="oriChange" style="margin-top:20rpx;">
+			<label class="radio2-body" a:for="{{ori_items}}">
+				<radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}  					
+			</label>
+		</radio-group>
+		<view class="div-line">
+		</view>
+		<text>相机方向(device-position):				
+		</text>
+		<radio-group class="radio-group" onChange="devPosChange" style="margin-top:20rpx;">
+			<label class="radio2-body" a:for="{{device_pos_items}}">
+				<radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}  								
+			</label>
+		</radio-group>
+		<view class="div-line">
+		</view>
+		<text>美颜强度(beauty):
+		</text>
+		<input type="digit" value="{{livepush.beauty}}" style="margin-top:20rpx;width:100%" onInput="beautyChanged"/>
+		<view class="div-line">
+		</view>
+		<button type="primary" class="submit-area" onTap="gotoDetail">Go To Detail
+		</button>
+	</view>
+</view>

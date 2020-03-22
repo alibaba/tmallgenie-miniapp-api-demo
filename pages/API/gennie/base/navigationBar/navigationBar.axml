@@ -1,0 +1,5 @@
+<view class="page-content">
+  <view class="page-section-title">导航栏Api</view>
+  <view class="operation-item" onTap="showNavigationBar">showNavigationBar</view>
+  <view class="operation-item" onTap="hideNavigationBar">hideNavigationBar</view>
+</view>

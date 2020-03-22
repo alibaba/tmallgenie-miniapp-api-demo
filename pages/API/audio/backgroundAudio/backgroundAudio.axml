@@ -1,0 +1,11 @@
+<view class="background-audio-page">
+  <view class="page-section-title">背景音频</view>
+  <view class="page-section-sub-title">my.getBackgroundAudioManager {{title}}</view>
+  <view class="operation-item" onTap="audioPlay">播放</view>
+  <view class="operation-item" onTap="audioPause">暂停</view>
+  <view class="operation-item" onTap="audioSeek">seek{{seek}}s播放</view>
+  <view class="operation-item" onTap="audioStop">停止播放</view>
+  <view class="operation-item" onTap="destroy">destroy</view>
+  <view class="operation-item" onTap="getAllProps">显示属性</view>
+  <view class="page-inset-bottom"/>
+</view>

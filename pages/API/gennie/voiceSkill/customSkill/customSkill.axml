@@ -1,0 +1,5 @@
+<view class="page-content">
+  <view class="page-section-title">使用自定义技能</view>
+  <view class="page-section-sub-title">useCustomSkill</view>
+  <view class="operation-item" onTap="useCustomSkill">设置技能配置</view>
+</view>

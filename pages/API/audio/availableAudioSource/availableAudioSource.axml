@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="page-section-title">获取支持的音频输入源</view>
+  <view class="availableAudioSources">
+    <view class="availableAudioSources-container">
+    <view class="page-container-api-title">my.getAvailableAudioSources</view>
+    <button class="page-container-api-button" type="primary" onTap="getAvailableAudioSources" hover-class="defaultTap">获取支持的音频输入源</button>
+  </view>
+  </view>
+</view>

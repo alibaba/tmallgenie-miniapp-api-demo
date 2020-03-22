@@ -1,0 +1,9 @@
+<view class="page-content">
+  <view class="page-section-title">支付(待上线)</view>
+  <view class="page-section-sub-title">my.requestPay</view>
+  <!-- <view class="operation-item" onTap="testPay">支付</view> -->
+  <view class="operation-item" onTap="qrcodePay">二维码支付</view>
+  <view class="operation-item" onTap="memberPay">会员支付(招财猫)</view>
+  <!-- <view class="operation-item" onTap="unifyPay">qrcode支付</view> -->
+  <view class="page-inset-bottom"/>
+</view>

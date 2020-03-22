@@ -1,0 +1,68 @@
+<view class="page-body">
+  <view class="container">
+    <view class="info-area">视频源(src):</view>
+    <input type="text" style="width:100%;" onInput="srcChanged" value="{{video.src}}"/>
+
+    <view class="info-area">封面图(poster):</view>
+    <input type="text" style="width:100%;" value="{{video.poster}}" onInput="posterChanged"/>
+	<view class="div-line"/>
+    <view style="margin-top:20px;margin-bottom:20rpx;color:white;">UI类可选参数:</view>
+    <view>
+      <text class="info-area">底部控制栏(controls):</text>
+      <switch checked="{{video.showAllControls}}" style="margin-left:40rpx;" onChange="showAllControls"/>
+    </view>
+    <view>
+      <text class="info-area">底部播放按钮(show-play-btn):</text>
+      <switch checked="{{video.showPlayButton}}" style="margin-left:40rpx;" onChange="showPlayButton"/>
+    </view>
+    <view>  
+      <text class="info-area">中间按钮(show-center-play-btn):</text>
+      <switch checked="{{video.showCenterButton}}" style="margin-left:40rpx;" onChange="showCenterButton"/>
+    </view>
+    <view>
+	  <text class="info-area">全屏按钮(show-fullscreen-btn):</text>
+      <switch checked="{{video.showFullScreenButton}}" style="margin-left:40rpx;" onChange="showFullScreenButton"/>
+    </view>
+    
+	<text class="info-area">填充模式(object-fit):</text>
+	<radio-group class="radio-group" onChange="radioChange" style="margin-top:20rpx;">
+		<label class="radio2-body" a:for="{{objfit_items}}">
+			<radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}  
+		</label>
+	</radio-group>
+    <view class="div-line"></view>
+    <text class="info-area">清晰度(definition):</text>
+	<radio-group class="radio-group" onChange="definitionChange" style="margin-top:20rpx;">
+		<label class="radio2-body" a:for="{{definition_items}}">
+			<radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}  
+		</label>
+	</radio-group>
+
+    <view class="div-line"></view>
+    <view style="margin-top:20px;margin-bottom:20rpx;color:white;">控制类可选参数:</view>
+    
+    <view>
+      <text class="info-area">循环播放(loop):</text>
+      <switch checked="{{video.isLooping}}" style="margin-left:40rpx;" onChange="isLooping"/>
+    </view>
+    <view>
+	  <text class="info-area">静音播放(muted):</text>
+      <switch checked="{{video.muteWhenPlaying}}" style="margin-left:40rpx;" onChange="isMuteWhenPlaying"/> 
+    </view>
+    <view>
+	  <text class="info-area">自动播放(autoplay):</text>
+	  <switch checked="{{video.autoPlay}}" style="margin-left:40rpx;" onChange="autoPlay"/>    
+    </view> 
+	<view class="div-line"></view>
+    <view>
+      <text class="info-area">开始时间(initial-time):</text>
+      <input type="digit" value="{{video.initTime}}" style="margin-top:0rpx;margin-left:4px;" onInput="startTimeChanged"/>
+    </view>
+	<view class="div-line"/>
+    <view>
+	  <text class="info-area">4G播放提醒:</text>
+	  <input type="digit" value="{{video.mobilenetHintType}}" style="margin-top:0rpx;margin-left:4px;" onInput="hintTypeChanged"/>
+    </view>
+    <button type="primary" class="submit-area" onTap="gotoDetail">Go To Detail</button>
+  </view>
+</view>

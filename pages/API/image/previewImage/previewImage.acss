@@ -1,0 +1,26 @@
+.preview-image {
+  display: flex;
+  width: 100vw;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-image-container {
+  display: flex;
+  flex-direction: column;
+  width: 824px;
+  background-color: rgba(36, 39, 45, 0.57);
+  border-radius: 8px;
+}
+
+
+.preview-image-title {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.preview-image-button {
+  margin: 40px;
+}

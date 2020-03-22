@@ -1,0 +1,40 @@
+<view class="page">
+     <g-tabs
+      tabs="{{tabs}}"
+      tabBarWrapperCls="index-tabs-tab-bar-wrapper"
+      onTabClick="handleTabClick"
+      onChange="handleTabChange"
+      activeTab="{{activeTab}}"
+      swipeable="{{true}}"
+    >
+      <block a:for="{{tabs}}" a:for-item="tabItem">
+        <g-tabs-content key="{{index}}">
+          <scroll-view class="index-scroll-content" scroll-y="{{true}}" onScroll="onScroll">
+            <view a:if="{{index==0}}" class="index-scroll-content-banner">
+              <image class="index-scroll-content-banner-logo" src="/image/component_logo.png" mode="aspectFit" />
+              <view class="index-scroll-content-banner-title" style="opacity: {{1}}">天猫精灵语音小程序示例</view>
+              <view class="index-scroll-content-banner-sub-title" style="opacity: {{titleOpacity}}">（部分组件和API需要单独申请功能包权限）</view>
+            </view>
+            <block a:for="{{tabItem.data}}" a:for-item="list" a:for-index="index">
+              <view class="index-scroll-content-cell">
+                <text class="index-scroll-content-cell-section">{{list.type}}</text>
+                <block a:for="{{list.list}}">
+                    <navigator class="index-scroll-content-cell-navigator" url="{{item.path}}" 
+                      style="{{index===0?'border-top-left-radius:8px;border-top-right-radius:8px;'
+                            :(index===list.list.length-1?'border-bottom-left-radius:8px;border-bottom-right-radius:8px;':'')}}">
+                      <image a:if="{{item.thumb}}" src="{{item.thumb}}" class="index-scroll-content-cell-navigator-thumb" mode="aspectFit" />
+                      <text class="index-scroll-content-cell-navigator-name">{{item.name}}</text>
+                      <text class="index-scroll-content-cell-navigator-brief">{{item.nameEn}}</text>
+                      <image class="index-scroll-content-cell-navigator-arrow" mode="scaleToFill" src="/image/navigator-arrow.png"/>
+                    </navigator>
+                    <view class="index-scroll-content-cell-navigator-line"/>
+                </block>
+              </view>
+            </block>
+
+            <view class="index-scroll-content-bottom-inset"/>
+          </scroll-view>
+        </g-tabs-content>
+      </block>
+  </g-tabs>
+</view>

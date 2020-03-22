@@ -1,0 +1,39 @@
+<view >
+	<live-pusher id="livepusher"
+		url="{{livepush.url}}"
+		mode="{{livepush.mode}}"
+		autopush="{{livepush.autopush}}"
+		muted="{{livepush.muted}}"
+		orientation="{{livepush.orientation}}" 
+		beauty="{{livepush.beauty}}" 
+		device-position="{{livepush.device_pos}}"
+		class="live"
+		onError="onPushError"
+		onStateChange="onStateChange"
+		onNetStatus="onNetStatus"
+	/>
+	<view class="page-body">
+		<view class="section-body">推流状态：state/netstatus/error
+		</view>
+		<button type="default" class="info-area" plain="false"> {{state}}
+		</button>
+		<button type="default" class="info-area" plain="false"> {{netstatus}} 
+		</button>
+		<button type="default" class="info-area" plain="false"> {{error}} 		
+		</button>
+		<view class="section-body">接口展示
+		</view>
+		<button type="default" class="btn-area-4" onTap="start" plain> start 
+		</button>
+		<button type="default" class="btn-area-4" onTap="pause" plain> pause 
+		</button>
+		<button type="default" class="btn-area-4" onTap="resume" plain> resume 
+		</button>
+		<button type="default" class="btn-area-4" onTap="stop" plain> stop 		
+		</button>
+		<button type="default" class="btn-area-2" onTap="switchCamera" plain>switch camera
+		</button>
+		<button type="default" class="btn-area-2" onTap="toggleTorch" plain>toggle torch		
+		</button>
+	</view>
+</view>

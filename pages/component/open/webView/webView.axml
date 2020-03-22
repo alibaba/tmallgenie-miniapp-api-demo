@@ -1,0 +1,10 @@
+<view class="page">
+  <web-view src="https://render.alipay.com/p/w/tinyapp-demo-h5/index.html" onMessage="onmessage"></web-view>
+</view>
+<!-- https://render.alipay.com/p/w/tinyapp-demo-h5/index.html -->
+<!-- https://tv.cctv.com/live/cctv1/ -->
+<!-- <view class="page-content">
+  <view class="page-section-title">webview</view>
+  <view class="page-section-sub-title">my.createWebViewContext</view>
+  <view class="operation-item">需要在支付宝小程序后台配置H5白名单，否则无法正确加载。流程参考： https://opendocs.alipay.com/mini/component/idfvg6</view>
+</view> -->

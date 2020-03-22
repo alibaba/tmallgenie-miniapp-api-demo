@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="page-section-title">录音管理</view>
+
+  <view class="page-section-sub-title">my.getRecorderManager</view>
+
+  <scroll-view scroll-y="{{true}}">
+      <view class="operation-item" onTap="startRecording">开始录音</view>
+      <view class="operation-item" onTap="stopRecording">结束录音</view>
+      <view class="operation-item" onTap="pauseRecording">暂停录音</view>
+      <view class="operation-item" onTap="resumeRecording">恢复录音</view>
+      <!-- <view class="operation-item" onTap="resumeRecording">offFrameRecorded</view> -->
+      <view class="operation-item" onTap="playAudio">播放录制好的音频</view>
+      <view class="operation-item" onTap="stopAudio">停止播放录制好的音频</view>
+      
+    <!-- <picker onChange="chooseRecordTime" value="{{recordTimeIndex}}" range="{{recordTimeArr}}">
+      <view class="row">
+        <view class="row-title">录音时间(分钟)</view>
+        <view class="row-extra">当前选择：{{recordTimeCount}}</view>
+      </view>
+    </picker>
+    <picker onChange="chooseAudioSource" value="{{audioSourceIndex}}" range="{{audioSourcesArr}}">
+      <view class="row">
+        <view class="row-title">音源</view>
+        <view class="row-extra">当前选择：{{audioSource}}</view>
+      </view>
+    </picker>
+    <picker onChange="chooseSampleRate" value="{{sampleRateIndex}}" range="{{sampleRateArr}}">
+      <view class="row">
+        <view class="row-title">采样率</view>
+        <view class="row-extra">当前选择：{{sampleRateCount}}</view>
+      </view>
+    </picker>
+    <picker onChange="chooseeNumberOfChannels" value="{{numberOfChannelsIndex}}" range="{{numberOfChannelsArr}}">
+      <view class="row">
+        <view class="row-title">声道数</view>
+        <view class="row-extra">当前选择：{{numberOfChannels}}</view>
+      </view>
+    </picker>
+    <picker onChange="chooseeEncodeBitRate" value="{{encodeBitRateIndex}}" range="{{encodeBitRateArr}}">
+      <view class="row">
+        <view class="row-title">码率</view>
+        <view class="row-extra">当前选择：{{encodeBitRateCount}}</view>
+      </view>
+    </picker> -->
+    <view class="page-section-title" />
+
+  </scroll-view>
+  
+</view>

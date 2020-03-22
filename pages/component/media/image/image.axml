@@ -1,0 +1,14 @@
+<view>
+  <view class="conatiner">
+    <view class="page-section-title" style="align-self:flex-start;">图片</view>
+    <block a:for="{{array}}">
+      <view class="row-group">
+        <view class="row-group-title">{{item.text}}</view>
+        <image class="image"
+            data-name="{{item.mode}}"
+            onTap="onTap"
+            mode="{{item.mode}}" src="{{src}}" onError="imageError" onLoad="imageLoad" />
+      </view>
+    </block>
+  </view>
+</view>

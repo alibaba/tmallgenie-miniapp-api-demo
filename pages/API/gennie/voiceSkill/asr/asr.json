@@ -1,0 +1,16 @@
+{
+  "skill": [
+    {
+      "commands": [
+        "test"
+      ],
+      "onVoice": "helloAsr"
+    },
+    {
+      "commands": [
+        "order"
+      ],
+      "onVoice": "response(amount, dish)"
+    }
+  ]
+}

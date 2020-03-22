@@ -1,0 +1,5 @@
+<view class="page-content">
+  <view class="page-section-title">播放TTS</view>
+  <view class="page-section-sub-title">my.tg.playTTS</view>
+  <view class="operation-item" onTap="playTTS">播放</view>
+</view>

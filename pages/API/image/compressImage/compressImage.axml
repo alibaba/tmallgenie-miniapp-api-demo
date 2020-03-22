@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="page-section-title">压缩图片 API</view>
+  <view class="compress-image">
+    <view class="compress-image-container">
+      <view class="page-container-api-title">my.compressImage</view>
+      <button class="page-container-api-button" type="primary" onTap="selectImage" hover-class="defaultTap">选择图片</button>
+      <view class="page-container-api-title">原图</view>
+      <image class="compress-image-image" src="{{originSrc}}" mode="aspectFit" />
+      <view class="page-container-api-title">压缩图</view>
+      <image class="compress-image-image" src="{{compressedSrc}}" mode="aspectFit" />
+    </view>
+  </view>
+</view>
+

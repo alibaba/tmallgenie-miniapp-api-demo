@@ -1,0 +1,19 @@
+{
+  "skill": [
+    {
+      "command": "test",
+      "voice": [
+        "测试"
+      ]
+    },
+    {
+      "command": "order",
+      "voice": [
+        "来@{amount:Number}份@{dish:String}",
+        "来@{amount:Number}个@{dish:String}",
+        "加@{amount:Number}份@{dish:String}",
+        "加@{amount:Number}个@{dish:String}"
+      ]
+    }
+  ]
+}
