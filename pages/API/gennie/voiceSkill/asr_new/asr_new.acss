@@ -1,0 +1,117 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+}
+.title{
+    position: fixed;
+    width: 100vw;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.scroll-view{
+    margin-top: 7vw;
+    height: 35vw;
+    width: 100vw;
+    overflow:hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.item-container{
+  
+    width: 20vw;
+    height: 30vw;
+    background: white;
+   margin-left: 2vw;
+    border-radius: 1.5vw;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow:0;
+    flex-direction: column;
+}
+.item-tip{
+    margin-bottom: 1vw;
+    width: 4vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.25vw;
+    padding-bottom: 0.25vw;
+    border-bottom-right-radius: 1.5vw;
+    border-top-left-radius: 1.5vw;
+    font-size: 2vw;
+    background: red;
+    color: white;
+}
+.item-image{
+    border-radius: 1vw; 
+    padding-top: -1vw;
+    align-self: center;
+    width: 14vw;
+    height: 14vw;
+}
+.item-bottom{
+    margin-top: 1.5vw;
+    padding-left: 2.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.bottom-view{
+    bottom:0px;
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(126, 36, 36, 0.507);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-bottom{
+    font-size: 3vw;
+    color: white;
+    background: white;
+    margin-left: 4vw;
+}
+.text-bottom-right{
+    font-size: 2vw;
+    padding-top: 0.5vw;
+    padding-left: 1.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 1.5vw;
+    border-radius: 0.2vw;
+    color: white;
+    background: rgb(41, 201, 41);
+    margin-right: 4vw;
+}
+.text-bottom-menu{
+    font-size: 2vw;
+    color: white;
+     margin-left: 4vw;
+}
+.text-bottom-pay{
+     font-size: 2vw;
+     color: white;
+     margin-left: 6vw;
+}
+.debug{
+    position: fixed;
+    bottom: 12vh;
+     font-size: 2vw;
+     color: white;
+     margin-left: 6vw;
+}
+.item-container-father{
+    padding-right: 2vw;
+    margin-top: 5vh;
+}

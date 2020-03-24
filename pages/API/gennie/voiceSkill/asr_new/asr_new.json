@@ -1,0 +1,17 @@
+{
+  "skill": [
+    
+    {
+      "commands": [
+        "order"  
+      ],
+      "onVoice": "response(amount, dish)"
+    },
+    {
+      "commands": [
+        "orderSimple"  
+      ],
+      "onVoice": "responseSimple(dish)"
+    }
+  ]
+}

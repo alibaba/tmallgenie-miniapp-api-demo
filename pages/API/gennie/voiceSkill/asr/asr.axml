@@ -1,17 +1,44 @@
-<view>
-  <scroll-view class="container" scroll-y="{{true}}"> 
+<view style="display:flex;flex-direction:column;">
+
+  <scroll-view class="container" scroll-y="{{true}}" > 
     <view class="header"> 
       <view class="title">欢迎来点餐</view>
     </view> 
-    <view class="dish-item" a:for="{{dishes}}">
+    <view class="dish-item" a:for="{{dishes}}" onTap="handleDish" data-dishInfo="{{item}}">
       <view class="dish-desc">
         <image class="icon" src="{{item.image}}"/>
         <view class="dish-name">{{item.name}}</view>
       </view>
-      <view class="dish-cost">
-        <view>x {{item.amount}}</view>
-        <view>{{item.totalCost}}元</view>
+      <view class="dish-cost" >
+        <!-- <view class="dish-cost-num">x {{item.amount}}</view> -->
+        <view>{{item.price}}元</view>
       </view>
     </view>
   </scroll-view>
+<view class="bottom-menu-list" a:if="{{bottomMenuShow}}" >
+  <view a:for={{doneDishes}} a:for-item="item" >
+    <view a:if="{{item.amount != 0}}" class="done-dish-item">
+     <view >
+        <view class="done-dish-name">{{item.name}}</view>
+      </view>
+      <view  class="done-dish-amount" >
+         <image  src="/image/asr/icon_shop_reduce.png"  data-option="-1" data-id="{{item.id}}"  onTap="handleDishOption"  class="done-dish-count-operation"  ></image>
+         <text >x {{item.amount}}</text>
+         <image src="/image/asr/icon_shop_plus.png"  data-option="1"  data-id="{{item.id}}"  onTap="handleDishOption"   class="done-dish-count-operation"></image>
+      </view> 
+      <view class="done-dish-cost" >
+        <view>{{item.totalCost}} 元</view>
+      </view>
+      </view>
+  </view>
 </view>
+ <view class="bottom-view" onTap="handlebottomView">   
+      <text class="text-bottom">{{dishMenu}}</text>
+      <text class="text-bottom-right">总共:{{dishCount}}元</text>
+  </view>
+ 
+</view>
+
+
+
+<!-- //style="width:{{windowWidth}}px;height:{{windowHeight}}px" -->

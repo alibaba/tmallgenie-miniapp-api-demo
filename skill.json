@@ -9,11 +9,36 @@
     {
       "command": "order",
       "voice": [
+        "要@{amount:Number}个@{dish:String}",
+        "要@{amount:Number}份@{dish:String}",
+        "要@{amount:Number}对@{dish:String}",
         "来@{amount:Number}份@{dish:String}",
         "来@{amount:Number}个@{dish:String}",
+        "来@{amount:Number}对@{dish:String}",
         "加@{amount:Number}份@{dish:String}",
-        "加@{amount:Number}个@{dish:String}"
-      ]
+        "加@{amount:Number}个@{dish:String}",
+        "加@{amount:Number}对@{dish:String}",
+        "我要@{amount:Number}个@{dish:String}",
+        "我要@{amount:Number}份@{dish:String}",
+        "我要@{amount:Number}对@{dish:String}"
+   
+
+
+
+      ],
+      "tips":["我要1个汉堡","来1份薯条"]
+    },{
+      "command": "orderSimple",
+      "voice": [
+
+        "要份@{dish:String}",
+        "要个@{dish:String}",
+        "要对@{dish:String}",
+        "来份@{dish:String}",
+        "来个@{dish:String}",
+        "来对@{dish:String}"
+      ],
+      "tips":["我要1个汉堡","来1份薯条"]
     }
   ]
 }

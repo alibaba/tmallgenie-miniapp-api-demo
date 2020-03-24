@@ -1,0 +1,57 @@
+<view class="container">
+    <view class="title">
+        <text class="titleText" style="color:white;font-size:3vw;">肯德基小店</text>
+    </view>
+    <!-- 这里是可以点餐的列表 -->
+    
+    <scroll-view  class="scroll-view" scroll-x="{{true}}" 
+        scroll-with-animation="true" scroll-animation-duration="100"
+      >
+     <!-- 这里是可以点餐的item -->  
+     <view class="item-container-father" a:for="{{dishes}}" >
+      <view class="item-container" onTap="dishItemTap" data-dishInfo="{{item}}">
+        
+        <text class="item-tip" a:if="{{item.tip}}">{{item.tip}}</text>
+
+       
+        <image class="item-image" mode="aspectFill" src="{{item.image}}"/>
+          
+        <view class="item-name">
+          <text  number-of-lines="1" style="font-weight:bold;font-size:2vw;margin-top:1.5vw;margin-left:2.5vw;">{{item.name}}</text> 
+          <text number-of-lines="1"  style="font-weight:normal;font-size:1.5vw;margin-top:1vw;margin-left:2.5vw;color:gray;" >月售   {{item.monthlySales}}      好评率   {{item.goodRatings}}%</text>
+        </view>
+        <view class="item-bottom">
+        <view>
+          <text style="color:red;font-size:1.5vw;margin-right:0.25vw;">￥</text>
+          <text style="color:red;font-size:2.5vw;">{{item.price}}</text>
+          <text style="color:red;font-size:1.5vw;margin-left:0.25vw;">起</text>
+        </view>
+        <view style="display:flex;align-items:center;margin-right:1vw;">
+          <image a:if="{{item.amount > 0}}" catchTap="foodCountOption" data-id="{{item.id}}" data-name="{{item.name}}" data-option="-1" style="width:2vw;height:2vw;margin-right:1vw;" mode="scaleToFill" src="/image/asr/icon_shop_reduce.png"/>
+          <text a:if="{{item.amount > 0}}"  style="color:black;font-size:2vw;">{{item.amount}}</text>
+          <image mode="scaleToFill" catchTap="foodCountOption"  data-id="{{item.id}}" data-name="{{item.name}}" data-option="1" style="width:2vw;height:2vw;margin-left:1vw;" src="/image/asr/icon_shop_plus.png"/>
+        </view>
+          
+        </view>
+
+      </view>
+      </view>
+    </scroll-view>
+
+    <!-- 这里是已经订餐的 -->  
+
+    <view >
+      <text class="debug" a:if="{{debugMode}}">{{debugText}}</text>
+    </view>
+
+    <view class="bottom-view" onTap="handlebottomView">   
+      <text class="text-bottom-menu"> {{totalDoneDishMenu}}</text>
+      <text class="text-bottom-pay " a:if="{{totalDoneDishCount > 0}}">总计：￥ {{totalDoneDishCount}}</text>
+      <text class="text-bottom-right">去结算</text>
+
+
+
+  </view>
+
+
+</view>

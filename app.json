@@ -32,10 +32,12 @@
     "pages/API/gennie/base/location/location",
     "pages/API/audio/globalAudio/globalAudio",
     "pages/API/gennie/base/userInfo/userInfo",
-    "pages/API/gennie/base/request/request"
+    "pages/API/gennie/base/request/request",
+    "pages/API/gennie/voiceSkill/asr_new/asr_new",
+    "pages/API/image/editImage/editImage/editImage"
   ],
   "window": {
     "defaultTitle": "天猫精灵小程序官方示例",
-    "allowsBounceVertical": "NO"
+    "allowsBounceVertical": "YES"
   }
 }

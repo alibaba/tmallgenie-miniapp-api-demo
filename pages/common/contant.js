@@ -44,7 +44,7 @@ export default {
         {
           name: '基础ASR-点餐示例',
           nameEn: 'asr',
-          path: '/pages/API/gennie/voiceSkill/asr/asr',
+          path: '/pages/API/gennie/voiceSkill/asr_new/asr_new',
         },
         {
           name: '沉浸式对话模式',
@@ -91,16 +91,16 @@ export default {
           nameEn: 'innerAudio',
           path: '/pages/API/audio/innerAudio/innerAudio',
         },
-        {
-          name: '背景音频',
-          nameEn: 'backgroundAudio',
-          path: '/pages/API/audio/backgroundAudio/backgroundAudio',
-        },
-        {
-          name: '全局音频',
-          nameEn: 'globalAudio',
-          path: '/pages/API/audio/globalAudio/globalAudio',
-        },
+        // {
+        //   name: '背景音频',
+        //   nameEn: 'backgroundAudio',
+        //   path: '/pages/API/audio/backgroundAudio/backgroundAudio',
+        // },
+        // {
+        //   name: '全局音频',
+        //   nameEn: 'globalAudio',
+        //   path: '/pages/API/audio/globalAudio/globalAudio',
+        // },
         {
           name: '录音管理',
           nameEn: 'recorderManager',

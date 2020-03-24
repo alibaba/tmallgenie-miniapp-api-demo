@@ -1,5 +1,5 @@
 <view class="page-content">
-  <view class="page-section-title">网络请求</view>
+  <view class="page-section-title">网络请求(下拉刷新)</view>
   <view class="page-section-sub-title">my.request</view>
   <view class="operation-item" onTap="request">发起请求</view>
 </view>

@@ -1,0 +1,3 @@
+<view class = "container">
+   <canvas id="{{canvasId}}" class ="canvas"></canvas>
+</view>
