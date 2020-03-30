@@ -26,7 +26,7 @@ export default {
           path: '/pages/API/gennie/base/location/location',
         },
         {
-          name: '获取精灵账号信息',
+          name: '获取账号信息',
           nameEn: 'userInfo',
           path: '/pages/API/gennie/base/userInfo/userInfo',
         }, 
@@ -96,11 +96,11 @@ export default {
         //   nameEn: 'backgroundAudio',
         //   path: '/pages/API/audio/backgroundAudio/backgroundAudio',
         // },
-        // {
-        //   name: '全局音频',
-        //   nameEn: 'globalAudio',
-        //   path: '/pages/API/audio/globalAudio/globalAudio',
-        // },
+        {
+          name: '音乐播放器',
+          nameEn: 'playMusic',
+          path: '/pages/API/audio/playMusic/playMusic',
+        },
         {
           name: '录音管理',
           nameEn: 'recorderManager',

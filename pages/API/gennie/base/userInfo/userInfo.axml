@@ -1,5 +1,13 @@
 <view class="page-content">
-  <view class="page-section-title">获取精灵账号信息</view>
-  <view class="page-section-sub-title">my.getGenieUserInfo</view>
-  <view class="operation-item" onTap="getGenieUserInfo">获取</view>
+  <view class="page-section-title">获取账号信息</view>
+  <view class="operation-item" onTap="getGenieUserInfo">获取精灵账号信息 - my.getGenieUserInfo</view
+  >
+  <button type="ghost" open-type="getAuthorize" class="operation-item" onGetAuthorize="onGetOpenUserData" onError="onAuthError" scope='userInfo'>
+    会员基础信息授权 - getOpenUserData
+</button>
+
+  <button type="ghost" open-type="getAuthorize" class="operation-item" onGetAuthorize="onGetPhoneNumber" onError="onAuthError" scope='phoneNumber'>
+    获取手机号 - getPhoneNumber
+  </button>
+
 </view>

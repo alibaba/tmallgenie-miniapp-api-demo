@@ -1,8 +1,0 @@
-<view class="page-content">
-  <view class="page-section-title">获取手机号</view>
-  <view class="page-section-sub-title">my.getPhoneNumber</view>
-  <button a:if="{{canIUseAuthButton}}" open-type="getAuthorize"
-        onGetAuthorize="onGetAuthorize" onError="onAuthError" scope='phoneNumber'>
-    授权手机号测试
- </button>
-</view>
