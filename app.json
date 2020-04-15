@@ -10,7 +10,6 @@
     "pages/API/image/previewImage/previewImage",
     "pages/API/image/saveImage/saveImage",
     "pages/API/image/chooseImage/chooseImage",
-    "pages/API/phoneNumber/phoneNumber",
     "pages/API/video/chooseVideo/chooseVideo",
     "pages/API/video/saveVideo/saveVideo",
     "pages/API/gennie/base/playTTS/playTTS",

@@ -10,7 +10,7 @@ App({
 
   gloabalData:{
     options:{},
-    uma // 请将uma模块绑定在gloabalData下，以便后续使用
+    //uma 请将uma模块绑定在gloabalData下，以便后续使用
   },
   
   onLaunch(options) {
